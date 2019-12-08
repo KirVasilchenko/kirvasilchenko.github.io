@@ -147,7 +147,7 @@ export default class MainPage {
     this._postsContainerEl.innerHTML = '';
     for (const post of posts) {
       const postEl = document.createElement('div');
-      postEl.className = 'col-4';
+      postEl.className = 'col-12';
 
       let postMedia = '';
       if (post.media !== null) {
