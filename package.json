@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kirvasilchenko/frontfeed.git"
+    "url": "git+https://github.com/kirvasilchenko/kirvasilchenko.github.io.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kirvasilchenko/frontfeed/issues"
+    "url": "https://github.com/kirvasilchenko/kirvasilchenko.github.io/issues"
   },
-  "homepage": "https://github.com/kirvasilchenko/frontfeed#readme",
+  "homepage": "https://github.com/kirvasilchenko/kirvasilchenko.github.io#readme",
   "dependencies": {
     "live-server": "^1.2.1"
   },
