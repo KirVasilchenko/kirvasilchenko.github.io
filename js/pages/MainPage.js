@@ -156,8 +156,8 @@ export default class MainPage {
     this._postsContainerEl.innerHTML = ``;
   }
 
-  loadMorePosts(lastPost, step) {
-    const str = "?last=" + lastPost + "&step=" + step;
+  loadMorePosts(lastPost, count) {
+    const str = "?last=" + lastPost + "&count=" + count;
     this._context.get("/posts" + str, {},
         text => {
           const posts = JSON.parse(text);
