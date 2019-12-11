@@ -157,8 +157,10 @@ export default class MainPage {
   }
 
   loadMorePosts(lastPost, count) {
-    const str = "?last=" + lastPost + "&count=" + count;
-    this._context.get("/posts" + str, {},
+      const params = new URLSearchParams();
+      params.append("last", lastPost);
+      params.append("count", count);
+    this._context.get("/posts" + params, {},
         text => {
           const posts = JSON.parse(text);
           this.loadNewList(posts);
