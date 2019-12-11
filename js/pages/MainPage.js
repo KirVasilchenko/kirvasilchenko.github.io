@@ -266,11 +266,11 @@ export default class MainPage {
     <div class="card mt-2">
     <div class="card-body">
               <div class="col text-center">
-                <a href="#" data-action="upload-posts" class="btn btn-sm btn-primary">Upload more posts</a>
+                <a href="#" data-action="load-posts" class="btn btn-sm btn-primary">Load more posts</a>
               </div>
               </div>
         </div>`;
-      loadPostEl.querySelector('[data-action=upload-posts]').addEventListener('click', evt => {
+      loadPostEl.querySelector('[data-action=load-posts]').addEventListener('click', evt => {
         evt.preventDefault();
         this._postsContainerEl.removeChild(loadPostEl);
         this.loadMorePosts(this._lastPost, this._postsCount);
@@ -309,7 +309,7 @@ export default class MainPage {
     <div class="card mt-2">
     <div class="card-body">
               <div class="col text-center">
-                <a href="#" data-action="new-posts" class="btn btn-sm btn-primary">Upload ${count} new posts</a>
+                <a href="#" data-action="new-posts" class="btn btn-sm btn-primary">Load ${count} new posts</a>
               </div>
               </div>
         </div>`;
